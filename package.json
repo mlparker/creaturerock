@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/mlparker/creaturerock/issues"
   },
-  "homepage": "https://github.com/mlparker/creaturerock#readme"
+  "homepage": "https://github.com/mlparker/creaturerock#readme",
+  "dependencies": {
+    "decap-cms": "^3.7.1"
+  }
 }
