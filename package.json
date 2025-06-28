@@ -4,10 +4,12 @@
   "description": "Static band site using Eleventy and Netlify CMS",
   "scripts": {
     "start": "eleventy --serve",
+    "cms": "npx netlify-cms-proxy-server",
     "build": "eleventy"
   },
   "devDependencies": {
-    "@11ty/eleventy": "^2.0.1"
+    "@11ty/eleventy": "^2.0.1",
+    "netlify-cms-proxy-server": "^1.3.24"
   },
   "main": ".eleventy.js",
   "repository": {
