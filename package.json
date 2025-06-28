@@ -1,0 +1,24 @@
+{
+  "name": "creaturerock",
+  "version": "1.0.0",
+  "description": "Static band site using Eleventy and Netlify CMS",
+  "scripts": {
+    "start": "eleventy --serve",
+    "build": "eleventy"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^2.0.1"
+  },
+  "main": ".eleventy.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mlparker/creaturerock.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mlparker/creaturerock/issues"
+  },
+  "homepage": "https://github.com/mlparker/creaturerock#readme"
+}
