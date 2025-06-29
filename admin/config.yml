@@ -16,8 +16,8 @@ collections:
         - { label: "Title", name: "title", widget: "string" }
         - { label: "Body", name: "body", widget: "markdown" }
         - { label: "Hero Image", name: "hero_image", widget: "image" }
-        - { label: "Bandcamp Embed",  name: "bandcamp_embed",  widget: "text", required: false }
-        - { label: "Contact Form",  name: "contact_form",  widget: "text", required: false }
+        - { label: "Bandcamp Embed",  name: "bandcamp_embed",  widget: "markdown", required: false }
+        - { label: "Contact Form",  name: "contact_form",  widget: "markdown", required: false }
   - name: "pages"
     label: "Pages"
     folder: "src/pages"
@@ -35,5 +35,14 @@ collections:
     slug: "{{slug}}"
     fields:
       - { label: "Title", name: "title", widget: "string" }
-      - { label: "Description", name: "description", widget: "markdown" }
+      - { label: "Body", name: "body", widget: "markdown" }
+      - { label: "Hero Image", name: "hero_image", widget: "image" }
+  - name: "blog"
+    label: "Blog"
+    folder: "src/blog"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Body", name: "body", widget: "markdown" }
       - { label: "Hero Image", name: "hero_image", widget: "image" }

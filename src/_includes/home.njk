@@ -1,0 +1,24 @@
+<link rel="stylesheet" href="/styles.css">
+
+<h1>{{ title }}</h1>
+
+<div class="hero-image">
+  <img src={{ hero_image }} />
+</div>
+
+<div class="main-body">
+  {{ content | safe }}
+</div>
+
+{% if bandcamp_embed %}
+  <div class="bandcamp-widget">
+    {{ bandcamp_embed | safe }}
+  </div>
+{% endif %}
+
+{% if contact_form %}
+  <div class="contact-form">
+    {{ contact_form | safe }}
+  </div>
+{% endif %}
+

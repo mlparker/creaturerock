@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Circle and Spiral</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="/styles.css" />
+
+</head>
+<body>
+  <div id="background-layer"></div>  <!-- ✨ animation lives here -->
+
+  <div class="site-wrapper">
+    <header class="site-header">
+      <nav>
+        <a href="/">Home</a>
+        <a href="/bio/">Bio</a>
+        <a href="/projects/">Projects</a>
+        <a href="/gallery/">Gallery</a>
+        <a href="/blog/">Blog</a>
+      </nav>
+    </header>
+
+    <main class="site-main">
+      <p>More info coming soon...</p>
+
+    </main>
+
+    
+    
+    
+
+    <footer class="site-footer">
+      <p>&copy; Circle and Spiral — Creature Rock transmissions</p>
+    </footer>
+  </div>
+</body>
+</html>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js" integrity="sha512-334uBDwY0iZ2TklV1OtDtBW9vp7jjP7SWRzT7Ehu1fdtPIjTpCwTSFb8HI/YBau9L1/kRBEOALrS229Kry4yFQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdn.jsdelivr.net/npm/vanta@0.5.24/dist/vanta.fog.min.js"></script>
+<script>
+VANTA.FOG({
+  el: "#background-layer",
+  mouseControls: true,
+  touchControls: true,
+  gyroControls: false,
+  minHeight: 200.00,
+  minWidth: 200.00,
+  highlightColor: 0x743ab1,
+  midtoneColor: 0x661db9,
+  lowlightColor: 0x1b0c1b,
+  baseColor: 0xd1c6f0,
+  blurFactor: 0.45,
+  speed: 0.60
+})
+</script>
