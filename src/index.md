@@ -1,7 +1,5 @@
-title: Welcome to Creature Rock
-layout: base.njk
 ---
-
-Welcome to the official site of **Michael** — mythic creature rock and divine artist-child energy.
-
-Explore the [Projects](/projects/) or [Gallery](/gallery/).
+title: Creature Rock
+hero_image: /images/avatar_cherry_blossom.png
+---
+Creature Rock is Michael Scott Parker
