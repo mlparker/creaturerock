@@ -4,6 +4,20 @@ backend:
 media_folder: "src/images"
 public_folder: "/images"
 collections:
+  - name: "homepage"
+    label: "Homepage"
+    files:
+    - name: "index"
+      label: "Index Page"
+      file: "src/index.md"
+      create: true
+      slug: "{{slug}}"
+      fields:
+        - { label: "Title", name: "title", widget: "string" }
+        - { label: "Body", name: "body", widget: "markdown" }
+        - { label: "Hero Image", name: "hero_image", widget: "image" }
+        - { label: "Bandcamp Embed",  name: "bandcamp_embed",  widget: "text", required: false }
+        - { label: "Contact Form",  name: "contact_form",  widget: "text", required: false }
   - name: "pages"
     label: "Pages"
     folder: "src/pages"
@@ -12,6 +26,8 @@ collections:
     fields:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Body", name: "body", widget: "markdown" }
+      - { label: "Hero Image", name: "hero_image", widget: "image" }
+      - { label: "Bandcamp Embed",  name: "bandcamp_embed",  widget: "text", required: false }
   - name: "projects"
     label: "Projects"
     folder: "src/projects"
@@ -20,3 +36,4 @@ collections:
     fields:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Description", name: "description", widget: "markdown" }
+      - { label: "Hero Image", name: "hero_image", widget: "image" }
