@@ -25,6 +25,7 @@ collections:
     slug: "{{slug}}"
     fields:
       - { label: "Title", name: "title", widget: "string" }
+      - { label: "Permalink", name: "permalink", widget: "string", required: false, hint: "Set to /gallery/ if you want this to be the gallery page" }
       - { label: "Body", name: "body", widget: "markdown" }
       - { label: "Hero Image", name: "hero_image", widget: "image" }
       - { label: "Bandcamp Embed",  name: "bandcamp_embed",  widget: "text", required: false }
@@ -32,8 +33,12 @@ collections:
     label: "Blog"
     folder: "src/blog"
     create: true
-    slug: "{{slug}}"
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    sort: "date:desc"
     fields:
+      - { label: "Layout", name: "layout", widget: "hidden", default: "base.njk" }
       - { label: "Title", name: "title", widget: "string" }
+      - { label: "Date", name: "date", widget: "datetime" }
       - { label: "Body", name: "body", widget: "markdown" }
-      - { label: "Hero Image", name: "hero_image", widget: "image" }
+      - { label: "Tags", name: "tags", widget: "list", required: false }
+      - { label: "Featured Image", name: "image", widget: "image", required: false }
