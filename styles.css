@@ -1,0 +1,108 @@
+/* RESET & BASE */
+#background-layer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* Behind everything else */
+  pointer-events: none; /* So it doesn’t block clicks */
+  background: black; /* fallback if JS fails */
+  overflow: hidden;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Helvetica Neue', sans-serif;
+  line-height: 1.6;
+  color: #222;
+  background: #faf9f6;
+}
+
+.site-wrapper {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: #444;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #000;
+}
+
+.site-main {
+  padding-bottom: 4rem;
+}
+
+.site-footer {
+  text-align: center;
+  font-size: 0.875rem;
+  padding: 2rem 0;
+  color: #777;
+}
+
+/* Embeds, forms, custom blocks */
+.crm-form-wrapper,
+.bandcamp-widget {
+  max-width: 500px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+}
+
+/* Responsive tweaks */
+@media (max-width: 600px) {
+  .site-wrapper {
+    padding: 1rem;
+  }
+
+  nav {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+}
+
+.bandcamp-widget {
+  max-width: 500px;
+  margin: 2rem auto;
+  padding: 1rem;
+  border: 2px solid #eee;
+  border-radius: 12px;
+  background-color: rgba(255, 255, 255, 0.85);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+}
+
+.bandcamp-widget iframe,
+.bandcamp-widget form {
+  width: 100% !important;
+}
+
+.contact-form {
+  max-width: 500px;
+  margin: 2rem auto;
+  padding: 1rem;
+  border: 2px solid #eee;
+  border-radius: 12px;
+  background-color: rgba(255, 255, 255, 0.85);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+}
+
+.contact-form iframe,
+.contact-form form {
+  width: 100% !important;
+}
