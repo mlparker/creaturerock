@@ -24,6 +24,12 @@
       {{ content | safe }}
     </main>
 
+    {% if image %}
+      <div class="post-featured-image">
+        <img src="{{ site.baseurl }}{{ image }}" alt="{{ title }}" />
+      </div>
+    {% endif %}
+
     {% if bandcamp_embed %}
       <div class="bandcamp-widget">
         {{ bandcamp_embed | safe }}
