@@ -1,5 +1,6 @@
 ---
 title: Media
+layout: base.njk
 hero_image: /images/avatar_cherry_blossom.png
 permalink: "{{ site.baseurl }}/media/"
 bandcamp_embed: |-
