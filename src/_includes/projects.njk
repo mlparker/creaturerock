@@ -6,6 +6,9 @@
         <img src="{{ site.baseurl }}{{ project.data.image }}" alt="{{ project.data.title }}" />
       {% endif %}
       <h2>{{ project.data.title }}</h2>
+      {% if project.data.description %}
+        <p>{{ project.data.description }}</p>
+      {% endif %}
     </a>
   {% endfor %}
 </div>
