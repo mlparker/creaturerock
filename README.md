@@ -1,2 +1,2 @@
 # Creature Rock Website
-Static band site powered by Eleventy + Netlify CMS, deployable to GitHub Pages.
+Static band site powered by Eleventy + Decap CMS, deployable to GitHub Pages.
