@@ -5,7 +5,8 @@
   "scripts": {
     "start": "eleventy --serve",
     "cms": "npx netlify-cms-proxy-server",
-    "build": "eleventy"
+    "build": "eleventy",
+    "test": "node test/dateFilter.test.js"
   },
   "devDependencies": {
     "@11ty/eleventy": "^2.0.1",
