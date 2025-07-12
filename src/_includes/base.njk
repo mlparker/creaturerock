@@ -46,24 +46,23 @@
       <p>&copy; {{ title }} — Creature Rock transmissions</p>
     </footer>
   </div>
+  <script src="{{ site.baseurl }}/scripts/three.r134.min.js"></script>
+  <script src="{{ site.baseurl }}/scripts/vanta.fog.min.js"></script>
+  <script>
+  VANTA.FOG({
+    el: "#background-layer",
+    mouseControls: true,
+    touchControls: true,
+    gyroControls: false,
+    minHeight: 200.00,
+    minWidth: 200.00,
+    highlightColor: 0x743ab1,
+    midtoneColor: 0x661db9,
+    lowlightColor: 0x1b0c1b,
+    baseColor: 0xd1c6f0,
+    blurFactor: 0.45,
+    speed: 0.15
+  })
+  </script>
 </body>
 </html>
-
-<script src="{{ site.baseurl }}/scripts/three.r134.min.js"></script>
-<script src="{{ site.baseurl }}/scripts/vanta.fog.min.js"></script>
-<script>
-VANTA.FOG({
-  el: "#background-layer",
-  mouseControls: true,
-  touchControls: true,
-  gyroControls: false,
-  minHeight: 200.00,
-  minWidth: 200.00,
-  highlightColor: 0x743ab1,
-  midtoneColor: 0x661db9,
-  lowlightColor: 0x1b0c1b,
-  baseColor: 0xd1c6f0,
-  blurFactor: 0.45,
-  speed: 0.15
-})
-</script>
