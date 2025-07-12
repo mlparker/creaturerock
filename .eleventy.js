@@ -9,6 +9,9 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addCollection("blog", function (collectionApi) {
     return collectionApi.getFilteredByGlob("src/blog/*.md");
   });
+  eleventyConfig.addCollection("projects", function (collectionApi) {
+    return collectionApi.getFilteredByGlob("src/projects/*.md");
+  });
   eleventyConfig.addFilter("date", dateObj => {
     return DateTime.fromJSDate(dateObj).toFormat("MMMM d, yyyy");
   });

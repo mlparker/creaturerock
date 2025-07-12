@@ -1,0 +1,11 @@
+<h1>Projects</h1>
+<div class="projects-grid">
+  {% for project in collections.projects %}
+    <a class="project-item" href="{{ site.baseurl }}{{ project.url }}">
+      {% if project.data.image %}
+        <img src="{{ site.baseurl }}{{ project.data.image }}" alt="{{ project.data.title }}" />
+      {% endif %}
+      <h2>{{ project.data.title }}</h2>
+    </a>
+  {% endfor %}
+</div>
