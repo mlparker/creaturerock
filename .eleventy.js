@@ -4,6 +4,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy(".nojekyll");
   eleventyConfig.addPassthroughCopy("admin");
   eleventyConfig.addPassthroughCopy("src/images");
+  eleventyConfig.addPassthroughCopy("src/images/glyphs");
   eleventyConfig.addPassthroughCopy("src/scripts");
   eleventyConfig.addPassthroughCopy("src/styles.css");
   eleventyConfig.addCollection("news", function (collectionApi) {
