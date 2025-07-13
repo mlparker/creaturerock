@@ -6,8 +6,8 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/images");
   eleventyConfig.addPassthroughCopy("src/scripts");
   eleventyConfig.addPassthroughCopy("src/styles.css");
-  eleventyConfig.addCollection("blog", function (collectionApi) {
-    return collectionApi.getFilteredByGlob("src/blog/*.md");
+  eleventyConfig.addCollection("news", function (collectionApi) {
+    return collectionApi.getFilteredByGlob("src/news/*.md");
   });
   eleventyConfig.addCollection("projects", function (collectionApi) {
     return collectionApi.getFilteredByGlob("src/projects/*.md");
