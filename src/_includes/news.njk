@@ -1,7 +1,7 @@
-<h1>Blog</h1>
-<ul class="blog-list">
-  {% for post in collections.blog | reverse %}
-    <li class="blog-listing">
+<h1>News</h1>
+<ul class="news-list">
+  {% for post in collections.news | reverse %}
+    <li class="news-listing">
       {% if post.data.image %}
         <img src="{{ site.baseurl }}{{ post.data.image }}" alt="{{ post.data.title }}" class="featured-image" />
       {% endif %}
