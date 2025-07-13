@@ -10,8 +10,6 @@
   <link rel="stylesheet" href="/creaturerock/styles.css" />
 </head>
 <body>
-  <div id="background-layer"></div>  <!-- ✨ animation lives here -->
-
   <div class="site-wrapper">
     <header class="site-header">
       <nav>
@@ -43,21 +41,8 @@
       <p>&copy; Test page — Creature Rock transmissions</p>
     </footer>
   </div>
-  <script src="/creaturerock/scripts/three.r134.min.js"></script>
-  <script src="/creaturerock/scripts/vanta.fog.min.js"></script>
-  <script>VANTA.FOG({
-    el: "#background-layer",
-    mouseControls: true,
-    touchControls: true,
-    gyroControls: false,
-    minHeight: 200.00,
-    minWidth: 200.00,
-    highlightColor: 0x743ab1,
-    midtoneColor: 0x661db9,
-    lowlightColor: 0x1b0c1b,
-    baseColor: 0xd1c6f0,
-    blurFactor: 0.45,
-    speed: 0.15
-  })</script>
+<script src="https://cdn.jsdelivr.net/npm/tsparticles@3/tsparticles.bundle.min.js" defer></script>
+<script src="/creaturerock/scripts/particles-init.js" defer></script>
+<div id="tsparticles"></div>
 </body>
 </html>
